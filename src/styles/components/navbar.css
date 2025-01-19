@@ -1,0 +1,48 @@
+/* Navbar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color:rgb(14, 14, 14);
+    height: 90px;
+    color: rgb(163, 2, 2);
+    padding: 5px 10px;
+  }
+  nav h1{
+    color: azure;
+  }
+  nav ul {
+    display: flex;
+    gap: 10px;
+    margin:25px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+nav button {
+    display: inline-block;
+    background-color: #333; /* Dark background for the button */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    /* Add padding for button size */
+    border-radius: 8px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  /* Hover effect for the button */
+  nav button:hover {
+    background-color: #555; /* Lighter background on hover */
+  }
+  

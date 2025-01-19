@@ -1,0 +1,58 @@
+/* General container styles */
+.lunch-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  /* Title styles */
+  .lunch-title {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  /* Recipe card container */
+  .recipe-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Recipe name */
+  .recipe-name {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  /* Recipe description and method */
+  .recipe-description,
+  .recipe-method {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Strong text for labels */
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Optional responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .recipe-card {
+      padding: 10px;
+      margin: 10px;
+    }
+    .lunch-title {
+      font-size: 1.5rem;
+    }
+  }
+  

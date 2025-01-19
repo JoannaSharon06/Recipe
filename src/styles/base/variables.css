@@ -1,0 +1,10 @@
+/* Global variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #333;
+    --bg-color: #f4f4f4;
+    --text-color: #555;
+    --border-color: #ddd;
+    --font-family: 'Arial, sans-serif';
+  }
+  
