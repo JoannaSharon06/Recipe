@@ -9,6 +9,12 @@ import RecipeList from "./components/RecipeList";
 import Categories from "./pages/Categories";
 import Lunch from "./pages/Lunch"; // Import Lunch page
 import "./styles/main.css";
+import Breakfast from "./pages/Breakfast";
+import Dinner from "./pages/Dinner";
+import Beverages from "./pages/Beverages";
+
+
+
 
 const App = () => {
   const [recipes, setRecipes] = useState([
@@ -24,7 +30,8 @@ const App = () => {
   
 
   return (
-    <Router>
+    
+    <Router basename="Recipe">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -34,6 +41,9 @@ const App = () => {
         <Route path="/categories/:category" element={<CategoryPage recipes={recipes} />} />
         <Route path="/recipes" element={<RecipeList recipes={recipes} />} />
         <Route path="/lunch" element={<Lunch />} /> {/* Add route for Lunch page */}
+        <Route path="/breakfast" element={<Breakfast />} />
+        <Route path="/dinner" element={<Dinner />} />
+        <Route path="/beverages" element={<Beverages />} />
       </Routes>
     </Router>
   );

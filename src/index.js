@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Lunch from './Lunch'; // Adjust the path based on where the Lunch component is located
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./styles/main.css"; // Import global styles
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Lunch />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));

@@ -55,7 +55,16 @@ const Categories = () => {
   const handleCategoryClick = (category) => {
     if (category.toLowerCase() === 'lunch') {
       navigate('/lunch'); // Navigate to the Lunch page for lunch recipes
-    } else {
+    } 
+    else if (category.toLowerCase() === 'breakfast') {
+      navigate('/breakfast'); // Navigate to the Lunch page for lunch recipes
+    }
+    else if (category.toLowerCase() === 'beverages') {
+      navigate('/beverages'); // Navigate to the Lunch page for lunch recipes
+    }
+    else if (category.toLowerCase() === 'dinner') {
+      navigate('/dinner'); // Navigate to the Lunch page for lunch recipes
+    }else {
       navigate(`/recipes/${category.toLowerCase()}`);
     }
   };

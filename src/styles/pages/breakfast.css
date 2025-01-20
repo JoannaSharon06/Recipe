@@ -1,0 +1,28 @@
+/* breakfast.css */
+.breakfast-container {
+    background-color: #ffebcd;
+    padding: 20px;
+  }
+  
+  .breakfast-title {
+    color: #d2691e;
+  }
+  
+  .recipe-card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+  }
+  
+  .recipe-name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-description,
+  .recipe-method {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
