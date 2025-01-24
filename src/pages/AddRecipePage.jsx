@@ -20,11 +20,10 @@ const AddRecipeForm = ({ onAddRecipe }) => {
       title: recipeName,
       category: recipeCategory,
       provider: "User",
-      image: "/assets/default.jpg", // Placeholder image
+      image: "/assets/default.jpg", 
     };
 
     onAddRecipe(newRecipe);
-
     setRecipeName("");
     setRecipeDescription("");
     setRecipeCategory("");

@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/lunch.css'; // Import the CSS file
+import '../styles/pages/lunch.css'; 
 
 const lunchRecipes = [
   {
@@ -20,24 +20,7 @@ const lunchRecipes = [
     description: "A portable Caesar salad in a tortilla wrap.",
     method: "Combine grilled chicken, romaine lettuce, Caesar dressing, and parmesan cheese in a wrap.",
   },
-  {
-    id: 4,
-    name: "Caprese Sandwich",
-    description: "A fresh sandwich with mozzarella, tomato, and basil.",
-    method: "Layer fresh mozzarella, tomato slices, and basil leaves on bread. Drizzle with olive oil and balsamic vinegar.",
-  },
-  {
-    id: 5,
-    name: "Turkey Club Sandwich",
-    description: "A classic sandwich with turkey, bacon, lettuce, and tomato.",
-    method: "Layer turkey, crispy bacon, lettuce, and tomato on toasted bread. Add mayonnaise.",
-  },
-  {
-    id: 6,
-    name: "Vegetable Stir-Fry Noodles",
-    description: "A quick and healthy noodle dish with mixed vegetables.",
-    method: "Stir-fry vegetables, add cooked noodles, and toss with soy sauce and sesame oil.",
-  },
+  
 ];
 
 const Lunch = () => {
@@ -62,3 +45,4 @@ const Lunch = () => {
 };
 
 export default Lunch;
+

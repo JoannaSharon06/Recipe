@@ -7,14 +7,10 @@ import EditRecipePage from "./pages/EditRecipePage";
 import CategoryPage from "./pages/CategoryPage";
 import RecipeList from "./components/RecipeList";
 import Categories from "./pages/Categories";
-import Lunch from "./pages/Lunch"; // Import Lunch page
-import "./styles/main.css";
+import Lunch from "./pages/Lunch";
 import Breakfast from "./pages/Breakfast";
 import Dinner from "./pages/Dinner";
 import Beverages from "./pages/Beverages";
-
-
-
 
 const App = () => {
   const [recipes, setRecipes] = useState([
@@ -31,7 +27,7 @@ const App = () => {
 
   return (
     
-    <Router basename="Recipe">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -40,10 +36,11 @@ const App = () => {
         <Route path="/categories" element={<Categories recipes={recipes} />} />
         <Route path="/categories/:category" element={<CategoryPage recipes={recipes} />} />
         <Route path="/recipes" element={<RecipeList recipes={recipes} />} />
-        <Route path="/lunch" element={<Lunch />} /> {/* Add route for Lunch page */}
+        <Route path="/lunch" element={<Lunch />} /> 
         <Route path="/breakfast" element={<Breakfast />} />
         <Route path="/dinner" element={<Dinner />} />
         <Route path="/beverages" element={<Beverages />} />
+  
       </Routes>
     </Router>
   );

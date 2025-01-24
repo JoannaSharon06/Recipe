@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/breakfast.css'; // Import the CSS file
+import '../styles/pages/breakfast.css'; 
+
 
 const breakfastRecipes = [
   {

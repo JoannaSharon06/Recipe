@@ -1,5 +1,6 @@
 import React from "react";
-import '../styles/beverages.css'; // Import the CSS file
+import '../styles/pages/beverages.css'; 
+
 
 const beverageRecipes = [
   {

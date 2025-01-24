@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import '../styles/pages/categories.css';
 import pan from '../assets/pan.jpg';
 import coffee from '../assets/coffee.jpg';
@@ -37,7 +37,6 @@ const recipes = [
   },
 ];
 
-// Get unique categories with their images
 const getUniqueCategories = (recipes) => {
   const categoryMap = new Map();
   recipes.forEach((recipe) => {
@@ -54,16 +53,16 @@ const Categories = () => {
 
   const handleCategoryClick = (category) => {
     if (category.toLowerCase() === 'lunch') {
-      navigate('/lunch'); // Navigate to the Lunch page for lunch recipes
+      navigate('/lunch'); 
     } 
     else if (category.toLowerCase() === 'breakfast') {
-      navigate('/breakfast'); // Navigate to the Lunch page for lunch recipes
+      navigate('/breakfast'); 
     }
     else if (category.toLowerCase() === 'beverages') {
-      navigate('/beverages'); // Navigate to the Lunch page for lunch recipes
+      navigate('/beverages'); 
     }
     else if (category.toLowerCase() === 'dinner') {
-      navigate('/dinner'); // Navigate to the Lunch page for lunch recipes
+      navigate('/dinner'); 
     }else {
       navigate(`/recipes/${category.toLowerCase()}`);
     }

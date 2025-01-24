@@ -1,58 +1,67 @@
-/* General container styles */
+/* lunch.css */
 .lunch-container {
-    padding: 20px;
-    text-align: center;
-    background-color: #f4f4f4;
-  }
-  
-  /* Title styles */
-  .lunch-title {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #2c3e50;
-  }
-  
-  /* Recipe card container */
+  padding: 40px 20px; /* Padding for the container */
+  background: linear-gradient(to bottom, #ffe4e1, #f8e2dc); /* Soft gradient background */
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all content horizontally */
+}
+
+.lunch-title {
+  font-size: 2.5rem; /* Large and bold title */
+  color: #2c3e50; /* Dark, contrasting text */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.recipe-card {
+  background-color: #ffffff; /* Clean white card background */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Inner padding for the card */
+  margin-bottom: 20px; /* Space between cards */
+  max-width: 500px; /* Limit the card width */
+  width: 90%; /* Ensure responsiveness on smaller screens */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add a soft shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.recipe-name {
+  font-size: 1.8rem; /* Slightly larger font for the recipe name */
+  color: #2c3e50; /* Dark text for readability */
+  margin-bottom: 10px;
+  text-align: center; /* Center-align the recipe name */
+}
+
+.recipe-description,
+.recipe-method {
+  font-size: 1rem; /* Standard font size */
+  color: #555; /* Soft gray for secondary text */
+  margin-bottom: 10px;
+  line-height: 1.6; /* Improve readability with line spacing */
+}
+
+strong {
+  font-weight: bold; /* Emphasize key points */
+  color: #333; /* Darker shade for strong text */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
   .recipe-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Adjust padding for smaller devices */
+    margin: 10px; /* Reduce spacing */
   }
-  
-  /* Recipe name */
+  .lunch-title {
+    font-size: 2rem; /* Adjust title size */
+  }
   .recipe-name {
-    font-size: 1.5rem;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Scale down recipe name */
   }
-  
-  /* Recipe description and method */
-  .recipe-description,
-  .recipe-method {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  /* Strong text for labels */
-  strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Optional responsive design for smaller screens */
-  @media (max-width: 600px) {
-    .recipe-card {
-      padding: 10px;
-      margin: 10px;
-    }
-    .lunch-title {
-      font-size: 1.5rem;
-    }
-  }
-  
+}
