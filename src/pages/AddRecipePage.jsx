@@ -30,8 +30,8 @@ const AddRecipeForm = ({ onAddRecipe }) => {
   };
 
   return (
-    <div className="add-recipe-form">
-                  <img src={BackgroundImage} alt="Background" id="background-img" />
+    <div className="addrecipe">
+                  <img src={BackgroundImage} alt="Background" id="backgroundimage" />
 
       <h2>Add a Recipe</h2>
       <form onSubmit={handleSubmit}>

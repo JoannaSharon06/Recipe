@@ -1,13 +1,11 @@
-/* General container styles */
-.categories-container {
+.categories {
   padding: 0px;
   max-width: 1000px;
   margin: 100 auto;
   font-family: 'Arial', sans-serif;
 }
 
-/* Title styles */
-.categories-title {
+.title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 10px;
@@ -17,16 +15,14 @@
   letter-spacing: 1.5px;
 }
 
-/* Categories grid styles */
-.categories-grid {
+.categoriesgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px; /* Reduced gap between items */
+  gap: 10px; 
   justify-items: center;
 }
 
-/* Category card styles */
-.category-card {
+.categorycard {
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -34,29 +30,27 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 200px; /* Fixed width */
-  padding: 10; /* No extra padding */
+  width: 200px; 
+  padding: 10; 
   margin: 0;
-  height: 170px; /* No extra margins */
+  height: 170px; 
 }
 
-.category-card:hover {
+.categorycard:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Category image styles */
-.category-image {
+.categoryimage {
   width: 100%;
-  height: 150px; /* Compact height */
-  object-fit: cover; /* Ensure image fits perfectly */
+  height: 150px;
+  object-fit: cover; 
   display: block;
 }
 
-/* Category name styles */
-.category-name {
+.categoryname {
   font-size: 1.1rem;
   color: #333;
   font-weight: bold;
-  margin: 5px 0; /* Reduced space below the text */
+  margin: 5px 0; 
 }

@@ -25,16 +25,16 @@ const dinnerRecipes = [
 
 const Dinner = () => {
   return (
-    <div className="dinner-container">
-      <h1 className="dinner-title">Dinner Recipes</h1>
+    <div className="dinner">
+      <h1 className="title">Dinner Recipes</h1>
       <div>
         {dinnerRecipes.map(({ id, name, description, method }) => (
-          <div key={id} className="recipe-card">
-            <h2 className="recipe-name">{name}</h2>
-            <p className="recipe-description">
+          <div key={id} className="recipecard">
+            <h2 className="recipename">{name}</h2>
+            <p className="recipedescription">
               <strong>Description:</strong> {description}
             </p>
-            <p className="recipe-method">
+            <p className="recipemethod">
               <strong>Method:</strong> {method}
             </p>
           </div>

@@ -1,4 +1,4 @@
-/* Navbar styles */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -30,19 +30,17 @@ nav {
   
 nav button {
     display: inline-block;
-    background-color: #333; /* Dark background for the button */
-    color: white; /* White text color */
-    text-decoration: none; /* Remove underline */
-    /* Add padding for button size */
-    border-radius: 8px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    font-size: 18px; /* Adjust font size */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    cursor: pointer; /* Change cursor to pointer */
+    background-color: #333; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    font-size: 18px;
+    transition: background-color 0.3s ease; 
+    cursor: pointer; 
   }
   
-  /* Hover effect for the button */
   nav button:hover {
-    background-color: #555; /* Lighter background on hover */
+    background-color: #555; 
   }
   

@@ -1,67 +1,47 @@
-/* lunch.css */
-.lunch-container {
-  padding: 40px 20px; /* Padding for the container */
-  background: linear-gradient(to bottom, #ffe4e1, #f8e2dc); /* Soft gradient background */
-  min-height: 100vh; /* Ensure full viewport height */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center all content horizontally */
+
+.lunch {
+  background-color: #f0f8ff;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
 }
 
-.lunch-title {
-  font-size: 2.5rem; /* Large and bold title */
-  color: #2c3e50; /* Dark, contrasting text */
+.title {
+  color: #1abc9c;
+  font-size: 2.5em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.recipe-card {
-  background-color: #ffffff; /* Clean white card background */
-  border: 1px solid #ddd; /* Subtle border */
-  border-radius: 12px; /* Rounded corners */
-  padding: 20px; /* Inner padding for the card */
-  margin-bottom: 20px; /* Space between cards */
-  max-width: 500px; /* Limit the card width */
-  width: 90%; /* Ensure responsiveness on smaller screens */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Add a soft shadow for depth */
-  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+.recipecard {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-card:hover {
-  transform: translateY(-5px); /* Lift card on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
-}
-
-.recipe-name {
-  font-size: 1.8rem; /* Slightly larger font for the recipe name */
-  color: #2c3e50; /* Dark text for readability */
+.recipename {
+  font-size: 1.8em;
+  color: #16a085;
   margin-bottom: 10px;
-  text-align: center; /* Center-align the recipe name */
 }
 
-.recipe-description,
-.recipe-method {
-  font-size: 1rem; /* Standard font size */
-  color: #555; /* Soft gray for secondary text */
-  margin-bottom: 10px;
-  line-height: 1.6; /* Improve readability with line spacing */
+.recipedescription,
+.recipemethod {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #7f8c8d;
 }
 
-strong {
-  font-weight: bold; /* Emphasize key points */
-  color: #333; /* Darker shade for strong text */
+.recipedescription strong,
+.recipemethod strong {
+  color: #1abc9c;
 }
 
-/* Responsive design for small screens */
-@media (max-width: 600px) {
-  .recipe-card {
-    padding: 15px; /* Adjust padding for smaller devices */
-    margin: 10px; /* Reduce spacing */
-  }
-  .lunch-title {
-    font-size: 2rem; /* Adjust title size */
-  }
-  .recipe-name {
-    font-size: 1.5rem; /* Scale down recipe name */
-  }
+.recipecard:hover {
+  background-color: #ecf0f1;
+  transition: background-color 0.3s;
 }

@@ -7,20 +7,17 @@ const Navbar = () => {
       <h1>FlavorFile</h1>
       <ul>
       <Link to="/">
-  <button>Home</button>
-</Link>
+        <button>Home</button>
+      </Link>
 
-        <Link to="/add">
-  <button>Add Recipe</button>
-</Link>
-
-<Link to="/edit/:id">
-  <button>Edit Recipe</button>
-</Link>
-
-
-
-
+      <Link to="/add">
+        <button>Add Recipe</button>
+      </Link>
+      
+      <Link to="/edit/:id">
+        <button>Edit Recipe</button>
+      </Link>
+      
       </ul>
     </nav>
   );

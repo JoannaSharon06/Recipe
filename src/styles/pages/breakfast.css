@@ -1,46 +1,47 @@
-.breakfast-container {
-  background-color: #ffe4c4; /* Soft peach background */
-  padding: 40px; /* Add more padding for better spacing */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  min-height: 100vh; /* Ensure full viewport height */
+
+.breakfast {
+  background-color: #f0f8ff;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
 }
 
-.breakfast-title {
-  color: #d2691e; /* Chocolate brown color */
+.title {
+  color: #1abc9c;
   font-size: 2.5em;
+  text-align: center;
   margin-bottom: 20px;
-  text-align: center;
 }
 
-.recipe-card {
-  background-color: #fff; /* White card background */
-  padding: 20px; /* Increased padding for better spacing */
-  margin: 15px 0;
-  border: 1px solid #ddd; /* Soft gray border */
-  border-radius: 10px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  width: 90%; /* Cards should be responsive */
-  max-width: 500px; /* Limit maximum card width */
+.recipecard {
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-name {
+.recipename {
   font-size: 1.8em;
+  color: #16a085;
   margin-bottom: 10px;
-  text-align: center;
-  color: #2e8b57; /* Sea green for titles */
 }
 
-.recipe-description,
-.recipe-method {
-  font-size: 1em;
-  margin: 8px 0;
-  color: #555; /* Dark gray for readability */
-  line-height: 1.5; /* Improve line spacing */
+.recipedescription,
+.recipemethod {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #7f8c8d;
 }
 
-.recipe-description strong,
-.recipe-method strong {
-  color: #2e8b57; /* Highlight key text */
+.recipedescription strong,
+.recipemethod strong {
+  color: #1abc9c;
+}
+
+.recipecard:hover {
+  background-color: #ecf0f1;
+  transition: background-color 0.3s;
 }

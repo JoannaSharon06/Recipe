@@ -1,4 +1,4 @@
-.add-recipe-form {
+.addrecipe {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
@@ -9,22 +9,22 @@
   height:480px;
 }
 
-.add-recipe-form h2 {
+.addrecipe h2 {
   text-align: center;
   color: #333;
   margin-bottom: -30px;
 }
 
-.add-recipe-form label {
+.addrecipe label {
   display: block;
   margin-bottom: 10px;
   color: #555;
   font-weight: bold;
 }
 
-.add-recipe-form input,
-.add-recipe-form textarea,
-.add-recipe-form select {
+.addrecipe input,
+.addrecipe textarea,
+.addrecipe select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -34,7 +34,7 @@
   font-size: 14px;
 }
 
-.add-recipe-form button {
+.addrecipe button {
   width: 100%;
   padding: 10px;
   background-color: #ff6f61;
@@ -45,16 +45,16 @@
   cursor: pointer;
 }
 
-.add-recipe-form button:hover {
+.addrecipe button:hover {
   background-color: #e55c4d;
 }
-#background-img {
-  position: fixed; /* Fix the image to the viewport */
+#backgroundimage {
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* Cover the full width */
-  height: 100%; /* Cover the full height */
-  object-fit: cover; /* Ensure the image scales correctly */
-  z-index: -1; /* Send the image behind all other content */
-  opacity: 0.8; /* Optional: Add transparency for better text visibility */
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1; 
+  opacity: 0.8; 
 }

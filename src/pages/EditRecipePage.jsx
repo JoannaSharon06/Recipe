@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import BackgroundImage from '../assets/recipe.jpg';
 
 const EditRecipePage = () => {
-  // Define the recipes array directly within the component
   const recipes = [
     { id: 1, name: "Jalapeno Popper Grilled Cheese Sandwich", description: "A spicy twist on the classic grilled cheese sandwich." },
     { id: 2, name: "Perfect Iced Coffee", description: "A refreshing iced coffee with the perfect balance of flavors." },
@@ -12,7 +11,7 @@ const EditRecipePage = () => {
   ];
 
   const navigate = useNavigate();
-  const { id } = useParams(); // Get the recipe ID from the URL
+  const { id } = useParams(); 
 
   const [recipeName, setRecipeName] = useState("");
   const [recipeDescription, setRecipeDescription] = useState("");
@@ -29,7 +28,6 @@ const EditRecipePage = () => {
   }, [recipeToEdit]);
 
   const handleEditClick = (recipeId) => {
-    // Navigate to the edit page for the selected recipe
     navigate(`/edit/${recipeId}`);
   };
 
@@ -37,7 +35,6 @@ const EditRecipePage = () => {
     event.preventDefault();
     const updatedRecipe = { id: parseInt(id), name: recipeName, description: recipeDescription };
     console.log("Updated Recipe:", updatedRecipe);
-    // Navigate back to the home page or recipe list after saving
     navigate("/");
   };
 
@@ -60,7 +57,7 @@ const EditRecipePage = () => {
           </ul>
         </>
       ) : (
-        <div className="edit-recipe-container">
+        <div className="editrecipe">
           <h3>Edit {recipeToEdit.name}</h3>
           <form onSubmit={handleSubmit}>
             <label>

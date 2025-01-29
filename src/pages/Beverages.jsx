@@ -25,16 +25,16 @@ const beverageRecipes = [
 
 const Beverages = () => {
   return (
-    <div className="beverages-container">
-      <h1 className="beverages-title">Beverages Recipes</h1>
+    <div className="beverages">
+      <h1 className="title">Beverages Recipes</h1>
       <div>
         {beverageRecipes.map(({ id, name, description, method }) => (
-          <div key={id} className="recipe-card">
-            <h2 className="recipe-name">{name}</h2>
-            <p className="recipe-description">
+          <div key={id} className="recipecard">
+            <h2 className="recipename">{name}</h2>
+            <p className="recipedescription">
               <strong>Description:</strong> {description}
             </p>
-            <p className="recipe-method">
+            <p className="recipemethod">
               <strong>Method:</strong> {method}
             </p>
           </div>

@@ -69,17 +69,17 @@ const Categories = () => {
   };
 
   return (
-    <div className="categories-container">
-      <h1 className="categories-title">Recipe Categories</h1>
-      <div className="categories-grid">
+    <div className="categories">
+      <h1 className="title">Recipe Categories</h1>
+      <div className="categoriesgrid">
         {categories.map(([category, image], index) => (
           <div
             key={index}
-            className="category-card"
+            className="categorycard"
             onClick={() => handleCategoryClick(category)}
           >
-            <img src={image} alt={category} className="category-image" />
-            <h2 className="category-name">{category}</h2>
+            <img src={image} alt={category} className="categoryimage" />
+            <h2 className="categoryname">{category}</h2>
           </div>
         ))}
       </div>
